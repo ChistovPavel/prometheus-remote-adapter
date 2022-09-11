@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  kafka:
+    bootstrap-servers:
+      - localhost:9092
+    client-id: kafka-adapter
+    template:
+      default-topic: testTopic
+kafka-adapter:
+  controller:
+    path:  "metrics/to/kafka"
